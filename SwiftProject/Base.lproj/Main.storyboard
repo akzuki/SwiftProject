@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNB-Sk-rrj">
+                                <rect key="frame" x="44" y="315" width="132" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="HdI-pG-o4a"/>
+                                    <constraint firstAttribute="width" constant="132" id="NTl-g1-JQn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="Uk4-8F-R2K"/>
+                                    <constraint firstAttribute="height" constant="132" id="iaL-Cy-bvx"/>
+                                </constraints>
+                                <state key="normal" image="icon1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVo-fa-ic3">
+                                <rect key="frame" x="441" y="301" width="132" height="132"/>
+                                <state key="normal" image="icon2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-Fk-Wig">
+                                <rect key="frame" x="44" y="468" width="132" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="SjM-LF-Ur4"/>
+                                    <constraint firstAttribute="width" constant="132" id="U6f-4B-1cG"/>
+                                </constraints>
+                                <state key="normal" image="icon2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-wI-cOn">
+                                <rect key="frame" x="441" y="468" width="132" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="BkW-RW-laS"/>
+                                </constraints>
+                                <state key="normal" image="icon2"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMPTY SPOTS: 54" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qw-oU-SAK">
+                                <rect key="frame" x="150" y="135" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="F3A-9D-TCz"/>
+                                    <constraint firstAttribute="width" constant="300" id="bLg-G3-5qV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TNB-Sk-rrj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="2Hv-DW-wSY"/>
+                            <constraint firstItem="SVo-fa-ic3" firstAttribute="firstBaseline" secondItem="TNB-Sk-rrj" secondAttribute="firstBaseline" id="E2W-cl-x0B"/>
+                            <constraint firstItem="9qw-oU-SAK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="JJP-DJ-PU1"/>
+                            <constraint firstItem="RBe-wI-cOn" firstAttribute="top" secondItem="3gu-Fk-Wig" secondAttribute="top" id="JSh-SN-2Hj"/>
+                            <constraint firstItem="RBe-wI-cOn" firstAttribute="baseline" secondItem="3gu-Fk-Wig" secondAttribute="baseline" id="LM5-cA-74s"/>
+                            <constraint firstItem="3gu-Fk-Wig" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="MdY-9P-FY1"/>
+                            <constraint firstItem="9qw-oU-SAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V1a-9H-itV"/>
+                            <constraint firstItem="RBe-wI-cOn" firstAttribute="trailing" secondItem="SVo-fa-ic3" secondAttribute="trailing" id="VKY-RD-D48"/>
+                            <constraint firstItem="SVo-fa-ic3" firstAttribute="baseline" secondItem="TNB-Sk-rrj" secondAttribute="baseline" id="dBU-dy-U6S"/>
+                            <constraint firstItem="RBe-wI-cOn" firstAttribute="leading" secondItem="SVo-fa-ic3" secondAttribute="leading" id="jmM-8M-zGp"/>
+                            <constraint firstItem="RBe-wI-cOn" firstAttribute="firstBaseline" secondItem="3gu-Fk-Wig" secondAttribute="firstBaseline" id="lAN-LA-jzf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RBe-wI-cOn" secondAttribute="trailing" constant="7" id="lIG-xF-kVJ"/>
+                            <constraint firstItem="SVo-fa-ic3" firstAttribute="top" secondItem="TNB-Sk-rrj" secondAttribute="top" id="rbj-A0-IoS"/>
+                            <constraint firstItem="3gu-Fk-Wig" firstAttribute="top" secondItem="TNB-Sk-rrj" secondAttribute="bottom" constant="25" id="rhH-zw-Sc2"/>
+                            <constraint firstItem="SVo-fa-ic3" firstAttribute="top" secondItem="9qw-oU-SAK" secondAttribute="bottom" constant="66" id="wq5-SH-GcY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptySpotLabel" destination="9qw-oU-SAK" id="bLt-u8-7Y6"/>
+                        <outlet property="icon1" destination="TNB-Sk-rrj" id="QYL-jZ-dGR"/>
+                        <outlet property="icon2" destination="SVo-fa-ic3" id="xsm-hY-8OG"/>
+                        <outlet property="icon3" destination="3gu-Fk-Wig" id="aY9-gu-qel"/>
+                        <outlet property="icon4" destination="RBe-wI-cOn" id="imL-wf-6Sv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1497" y="-421"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zdu-OZ-Wex">
+            <objects>
+                <viewController id="7iG-du-Qoy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JtE-fW-GnB"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIj-Cz-Q4n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zbc-uB-A6O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P61-8F-eM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-611" y="-413"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon1" width="64" height="64"/>
+        <image name="icon2" width="64" height="64"/>
+    </resources>
+</document>

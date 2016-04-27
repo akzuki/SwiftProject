@@ -20,14 +20,19 @@ class MapViewController: UIViewController, EILIndoorLocationManagerDelegate {
     var navigationLayer: CAShapeLayer!
     
     @IBAction func parkButton(sender: UIButton) {
-        locationView.removeObjectWithIdentifier("car1")
-        let imageGreenDot = UIImage(named: "icon2")
-        let greenDot = UIImageView.init(frame: CGRectMake(0, 0, 40, 40))
-                        greenDot.backgroundColor = UIColor.grayColor()
-        greenDot.image = imageGreenDot
-        let point1 = EILOrientedPoint(x: 1.5, y: 1.5, orientation: 0)
-        self.locationView.drawObjectInBackground(greenDot, withPosition: point1, identifier:"car1Parked")
+//        locationView.removeObjectWithIdentifier("car1")
+//        let imageGreenDot = UIImage(named: "icon2")
+//        let greenDot = UIImageView.init(frame: CGRectMake(0, 0, 40, 40))
+//                        greenDot.backgroundColor = UIColor.grayColor()
+//        greenDot.image = imageGreenDot
+//        let point1 = EILOrientedPoint(x: 1.5, y: 1.5, orientation: 0)
+//        self.locationView.drawObjectInBackground(greenDot, withPosition: point1, identifier:"car1Parked")
+        WebService.sharedInstance.getSpots(1, completionHandler: { (result) -> Void in
+            print(result[0].id)
+            //Now you get the array, which is "result"
+        })
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -121,10 +126,10 @@ class MapViewController: UIViewController, EILIndoorLocationManagerDelegate {
     }
     
     func updateNavigation() {
-        var path = UIBezierPath()
+        let path = UIBezierPath()
         let newPoint = locationView.calculatePicturePointFromRealPoint(currentPosition)
         path.moveToPoint(newPoint)
-        let newPoint2 = locationView.calculatePicturePointFromRealPoint(EILOrientedPoint(x: 1.5, y: 1.5, orientation: 0))
+        let newPoint2 = locationView.calculatePicturePointFromRealPoint(EILOrientedPoint(x: 4, y: 1.5, orientation: 0))
         path.addLineToPoint(CGPoint(x: newPoint2.x, y: newPoint.y))
         path.addLineToPoint(newPoint2)
         if navigationLayer != nil {

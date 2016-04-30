@@ -8,16 +8,63 @@
 
 import Foundation
 
-class Spot {
-    var id: NSNumber = 0
-    var x: String = ""
-    var y: String = ""
-    var status : Bool?
+class Spot: UIImageView{
     
+    // MARK: -Properties
     
+    private var id: Int?
+    private var x: Double?
+    private var y: Double?
+    private var status : Bool?
+    
+    //MARK
+    init(id: Int, x: Double, y: Double, status: Bool) {
+        super.init(frame: CGRectMake(0, 0, 40, 40))
+        self.id = id
+        self.x = x
+        self.y = y
+        self.status = status
+        self.backgroundColor = UIColor.grayColor()
+        if (status) {
+            self.image = UIImage(named: "icon2")
+        } else {
+            self.image = UIImage(named: "greenDot")
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: -Methods
     func changeStatus() {
         if let _status = status {
             status = !_status
         }
     }
+    
+    func getId() -> Int {
+        return self.id!
+    }
+    
+    func getX() -> Double {
+        return self.x!
+    }
+    
+    func getY() -> Double {
+        return self.y!
+    }
+    
+    func getStatus() -> Bool {
+        return self.status!
+    }
+    
+    func getCoordinate() -> EILOrientedPoint {
+        return EILOrientedPoint(x: self.x!, y: self.y!)
+    }
+    
+    func getInfo() -> String {
+        return "id: \(self.id) x: \(self.x) y: \(self.y) status: \(self.status)"
+    }
+    
 }

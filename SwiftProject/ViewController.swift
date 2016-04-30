@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var emptySpotLabel: UILabel!
     @IBOutlet weak var icon1: UIButton!
     @IBOutlet weak var icon2: UIButton!
-    @IBOutlet weak var icon3: UIButton!
-    @IBOutlet weak var icon4: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +20,13 @@ class ViewController: UIViewController {
         emptySpotLabel.layer.borderWidth = 3
         makeRoundedBorder(icon1)
         makeRoundedBorder(icon2)
-        makeRoundedBorder(icon3)
-        makeRoundedBorder(icon4)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        WebService.sharedInstance.countEmptySpots({ (result) -> Void in
+            self.emptySpotLabel.text = "EMPTY SPOTS: " + result
+            print("Done")
+        })
     }
 
     override func didReceiveMemoryWarning() {

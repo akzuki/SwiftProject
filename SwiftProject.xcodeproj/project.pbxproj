@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A22BEB61CD5FB2400DF4B4A /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A22BEB51CD5FB2400DF4B4A /* AppConstant.swift */; };
 		6A2AE5E71CCF956300B4B250 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2AE5E61CCF956300B4B250 /* WebService.swift */; };
-		6A41A4BF1CCFA4C400B08AB4 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41A4BE1CCFA4C400B08AB4 /* Spot.swift */; };
+		6A41A4BF1CCFA4C400B08AB4 /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A41A4BE1CCFA4C400B08AB4 /* AppEntity.swift */; };
 		6AA303291CB715D200FB59FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA303281CB715D200FB59FE /* AppDelegate.swift */; };
-		6AA3032B1CB715D200FB59FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3032A1CB715D200FB59FE /* ViewController.swift */; };
+		6AA3032B1CB715D200FB59FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3032A1CB715D200FB59FE /* HomeViewController.swift */; };
 		6AA3032E1CB715D200FB59FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA3032C1CB715D200FB59FE /* Main.storyboard */; };
 		6AA303311CB715D200FB59FE /* SwiftProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3032F1CB715D200FB59FE /* SwiftProject.xcdatamodeld */; };
 		6AA303331CB715D200FB59FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA303321CB715D200FB59FE /* Assets.xcassets */; };
@@ -41,15 +42,16 @@
 /* Begin PBXFileReference section */
 		3EAEAA003332081E0C972456 /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583D28609EDF37E52F0D6BA9 /* Pods-SwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject/Pods-SwiftProject.release.xcconfig"; sourceTree = "<group>"; };
+		6A22BEB51CD5FB2400DF4B4A /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		6A2AE5E61CCF956300B4B250 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = ../WebService.swift; sourceTree = "<group>"; };
 		6A3005CE1CCF93C20015A59F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
-		6A41A4BE1CCFA4C400B08AB4 /* Spot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		6A41A4BE1CCFA4C400B08AB4 /* AppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEntity.swift; sourceTree = "<group>"; };
 		6A4C9B911CCF935C00DA6EFE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		6A6BC74A1CCF92400040A361 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		6A9903411CCF974600677191 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		6AA303251CB715D200FB59FE /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA303281CB715D200FB59FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6AA3032A1CB715D200FB59FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AA3032A1CB715D200FB59FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6AA3032D1CB715D200FB59FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AA303301CB715D200FB59FE /* SwiftProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftProject.xcdatamodel; sourceTree = "<group>"; };
 		6AA303321CB715D200FB59FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +103,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6A22BEB81CD63F3100DF4B4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6AA3031C1CB715D200FB59FE = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +135,9 @@
 		6AA303271CB715D200FB59FE /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				6A22BEB81CD63F3100DF4B4A /* Model */,
 				6AA303281CB715D200FB59FE /* AppDelegate.swift */,
-				6AA3032A1CB715D200FB59FE /* ViewController.swift */,
+				6AA3032A1CB715D200FB59FE /* HomeViewController.swift */,
 				6AA3032C1CB715D200FB59FE /* Main.storyboard */,
 				6AD378961CC4C76D008D4AB1 /* MapViewController.swift */,
 				6AF465A31CC4CAE0009B4A05 /* Estimote-Bridging-Header.h */,
@@ -136,7 +146,8 @@
 				6AA303371CB715D200FB59FE /* Info.plist */,
 				6AA3032F1CB715D200FB59FE /* SwiftProject.xcdatamodeld */,
 				6A2AE5E61CCF956300B4B250 /* WebService.swift */,
-				6A41A4BE1CCFA4C400B08AB4 /* Spot.swift */,
+				6A41A4BE1CCFA4C400B08AB4 /* AppEntity.swift */,
+				6A22BEB51CD5FB2400DF4B4A /* AppConstant.swift */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
@@ -356,10 +367,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A41A4BF1CCFA4C400B08AB4 /* Spot.swift in Sources */,
-				6AA3032B1CB715D200FB59FE /* ViewController.swift in Sources */,
+				6A41A4BF1CCFA4C400B08AB4 /* AppEntity.swift in Sources */,
+				6AA3032B1CB715D200FB59FE /* HomeViewController.swift in Sources */,
 				6AA303311CB715D200FB59FE /* SwiftProject.xcdatamodeld in Sources */,
 				6AA303291CB715D200FB59FE /* AppDelegate.swift in Sources */,
+				6A22BEB61CD5FB2400DF4B4A /* AppConstant.swift in Sources */,
 				6A2AE5E71CCF956300B4B250 /* WebService.swift in Sources */,
 				6AD378971CC4C76D008D4AB1 /* MapViewController.swift in Sources */,
 			);
